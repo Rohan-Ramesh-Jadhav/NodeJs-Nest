@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/stripe_api/src",
+  "monorepo": true,
+  "root": "apps/stripe_api",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/stripe_api/tsconfig.app.json"
+  },
+  "projects": {
+    "stripe_api": {
+      "type": "application",
+      "root": "apps/stripe_api",
+      "entryFile": "main",
+      "sourceRoot": "apps/stripe_api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/stripe_api/tsconfig.app.json"
+      }
+    },
+    "stripe-other": {
+      "type": "application",
+      "root": "apps/stripe-other",
+      "entryFile": "main",
+      "sourceRoot": "apps/stripe-other/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/stripe-other/tsconfig.app.json"
+      }
+    },
+    "products": {
+      "type": "library",
+      "root": "libs/products",
+      "entryFile": "index",
+      "sourceRoot": "libs/products/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/products/tsconfig.lib.json"
+      }
+    }
+  }
+}

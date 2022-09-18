@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/student-app/src",
+  "monorepo": true,
+  "root": "apps/student-app",
+  "compilerOptions": {
+    "webpack": false,
+    "tsConfigPath": "apps/student-app/tsconfig.app.json"
+  },
+  "projects": {
+    "student-app": {
+      "type": "application",
+      "root": "apps/student-app",
+      "entryFile": "main",
+      "sourceRoot": "apps/student-app/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/student-app/tsconfig.app.json"
+      }
+    },
+    "staff-app": {
+      "type": "application",
+      "root": "apps/staff-app",
+      "entryFile": "main",
+      "sourceRoot": "apps/staff-app/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/staff-app/tsconfig.app.json"
+      }
+    },
+    "user": {
+      "type": "library",
+      "root": "libs/user",
+      "entryFile": "index",
+      "sourceRoot": "libs/user/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/user/tsconfig.lib.json"
+      }
+    },
+    "state": {
+      "type": "library",
+      "root": "libs/state",
+      "entryFile": "index",
+      "sourceRoot": "libs/state/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/state/tsconfig.lib.json"
+      }
+    },
+    "country": {
+      "type": "library",
+      "root": "libs/country",
+      "entryFile": "index",
+      "sourceRoot": "libs/country/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/country/tsconfig.lib.json"
+      }
+    },
+    "roll": {
+      "type": "library",
+      "root": "libs/roll",
+      "entryFile": "index",
+      "sourceRoot": "libs/roll/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/roll/tsconfig.lib.json"
+      }
+    },
+    "student_subject": {
+      "type": "library",
+      "root": "libs/student_subject",
+      "entryFile": "index",
+      "sourceRoot": "libs/student_subject/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/student_subject/tsconfig.lib.json"
+      }
+    },
+    "subject": {
+      "type": "library",
+      "root": "libs/subject",
+      "entryFile": "index",
+      "sourceRoot": "libs/subject/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/subject/tsconfig.lib.json"
+      }
+    },
+    "student_app_imports": {
+      "type": "library",
+      "root": "libs/student_app_imports",
+      "entryFile": "index",
+      "sourceRoot": "libs/student_app_imports/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/student_app_imports/tsconfig.lib.json"
+      }
+    },
+    "city": {
+      "type": "library",
+      "root": "libs/city",
+      "entryFile": "index",
+      "sourceRoot": "libs/city/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/city/tsconfig.lib.json"
+      }
+    },
+    "professior_student_subject": {
+      "type": "library",
+      "root": "libs/professior_student_subject",
+      "entryFile": "index",
+      "sourceRoot": "libs/professior_student_subject/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/professior_student_subject/tsconfig.lib.json"
+      }
+    }
+  }
+}

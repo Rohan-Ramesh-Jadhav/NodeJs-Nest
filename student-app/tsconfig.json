@@ -1,0 +1,103 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@app/user": [
+        "libs/user/src"
+      ],
+      "@app/user/*": [
+        "libs/user/src/*"
+      ],
+      "@app/city": [
+        "libs/city/src",
+        "libs/city/src",
+        "libs/city/src"
+      ],
+      "@app/city/*": [
+        "libs/city/src/*",
+        "libs/city/src/*",
+        "libs/city/src/*"
+      ],
+      "@app/state": [
+        "libs/state/src"
+      ],
+      "@app/state/*": [
+        "libs/state/src/*"
+      ],
+      "@app/country": [
+        "libs/country/src"
+      ],
+      "@app/country/*": [
+        "libs/country/src/*"
+      ],
+      "@app/roll": [
+        "libs/roll/src"
+      ],
+      "@app/roll/*": [
+        "libs/roll/src/*"
+      ],
+      "@app/student_subject": [
+        "libs/student_subject/src"
+      ],
+      "@app/student_subject/*": [
+        "libs/student_subject/src/*"
+      ],
+      "@app/subject": [
+        "libs/subject/src"
+      ],
+      "@app/subject/*": [
+        "libs/subject/src/*"
+      ],
+      "@app/professior_subject": [
+        "libs/professior_subject/src",
+        "libs/professior_subject/src"
+      ],
+      "@app/professior_subject/*": [
+        "libs/professior_subject/src/*",
+        "libs/professior_subject/src/*"
+      ],
+      "@app/professior_student": [
+        "libs/professior_student/src",
+        "libs/professior_student/src"
+      ],
+      "@app/professior_student/*": [
+        "libs/professior_student/src/*",
+        "libs/professior_student/src/*"
+      ],
+      "@app/student-app-imports": [
+        "libs/student-app-imports/src"
+      ],
+      "@app/student-app-imports/*": [
+        "libs/student-app-imports/src/*"
+      ],
+      "@app/student_app_imports": [
+        "libs/student_app_imports/src"
+      ],
+      "@app/student_app_imports/*": [
+        "libs/student_app_imports/src/*"
+      ],
+      "@app/professior_student_subject": [
+        "libs/professior_student_subject/src"
+      ],
+      "@app/professior_student_subject/*": [
+        "libs/professior_student_subject/src/*"
+      ]
+    }
+  }
+}
